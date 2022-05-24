@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our Blog</title>
+</head>
+<style>
+    body{
+        padding: 0%;
+        margin: 0%;
+        color: black;
+        background-image: url(./Image/uwp1836344.jpeg);
+    }
+   .body{
+        
+        margin-left: 31.5%;
+        margin-right: 31.5%;
+        margin-top: 15%;
+        display: inline-block;
+        width: auto;
+        height: auto;   
+   }
+   .btnContinue{
+       color: white;
+       background-color: black;
+       size: 50px;
+       padding: 3%;
+       font-size: medium;
+       border-radius: 50px 50px 50px 0px;
+        margin-left: 35%;
+   }
+   .btnContinue:hover{
+       background-color: lightblue;
+       border: 1px solid black;
+       color: black;
+   }
+   h1{
+       font-size: 45px;
+   }
+   h3{
+       font-size: 30px;
+   }
+   .click-me-btn{
+       width: 100px;
+       height: 50px;
+       background-color: lightblue;
+       border: 1px solid black;
+       border-radius: 20px 20px 20px 20px;
+       font-weight: 900;
+   }
+   
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 1000px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<body class="buds">
+    <div class="body">
+        <p id="p1">Hi Welcome to our..</p>
+        <h1 id="h1">Personal Blog x Portfolio</h1>
+        <button class="click-me-btn" type="button" onclick="changeme()">Click me..</button>       
+        <br>
+        <a href="./html webpages/Introductory.html"><input class="btnContinue" type="button" value="Continue"></a>  
+    </div>
+</body>
+<script>
+    function changeme(){
+        document.getElementById("h1").innerHTML =  "pogi continue kana..";
+        document.getElementById("p1").innerHTML =  "";
+    }
+</script>
+</html>

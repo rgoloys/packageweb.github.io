@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    /* First Page */
+body {
+    font-family: cursive;
+    padding: 0;
+    margin: 0;
+    background: white;
+    width: cover;
+    color: black;
+}
+.par{
+    font-size: 15px;
+    text-indent: 30px;
+}
+.hh{
+    text-align: center;
+}
+.navbar{
+    width: 90%;
+    margin: 0 auto;
+}
+.header1{
+    font-family: cursive;
+    background-image: url(../Image/bgimage2.jpeg);
+    padding: 0;
+    color: white;
+}
+.header1::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.navbar img{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px; 
+}
+.navbar nav{
+    float: right;
+    padding-top: 1.5%;
+}
+.nav ul{
+    width: 100%; 
+    margin: 0; 
+    padding: 1.5%;
+    list-style: none;
+}
+.nav ul li{
+    display: inline-block;
+    margin-left: 35px; 
+
+    position: relative;
+}
+.nav ul li a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 1000;
+}
+#Darkmode img{
+    width: 15px;
+    height: 15px; 
+    margin-left: 250px;
+}
+#Lightmode img{
+    width: 15px;
+    height: 15px; 
+    margin-left: 10px; 
+    margin-right: 5px; 
+}
+nav ul li a:hover{
+    color: red;
+}
+.nav a::before{
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    margin-top: 0%; 
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+.nav ul li a:hover:before{
+    width: 100%;
+}
+.Homepage{
+    display: inline-flex;
+    height: 600px;
+}
+.rolands{
+    width: auto;
+    padding: 5%;
+}
+.rich{
+    width: auto;
+    padding: 5%;
+}
+.img{
+    margin-left: 30%;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    margin-top: 5%;
+}
+.visit{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 1000px;
+    color: red;
+}
+.visit:Hover{
+    color: tomato;
+}
+/* Second Page */
+.Nametag{
+    margin-top: 5%; 
+    font-size: 25px;
+    margin-left: 5%; 
+    font-family: cursive;
+    padding: 0%;
+}
+td{
+   padding: 1.5%;
+}
+td img{
+    width: 500px;
+    height: 500px;
+}
+.Recenth1{
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 40px;
+    word-spacing: 0%;
+}
+/* Third Page */
+.Container{
+    height: 500px;
+    width: 850px;
+    margin-top: 75px; 
+    margin-left: 50px; 
+    border: 1px double white;
+    background-image: url(../Image/bgimage2.jpeg);
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 0px 80px 80px 80px;
+}
+.BlgPost{
+    display: inline-flex;
+}
+.readme{
+    text-decoration: none;
+    color: #808B96;
+    font-weight: 1000;
+}
+.readme:hover{
+    text-decoration: none;
+    color: tomato;
+}
+.blgh1{
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    margin-left: 10%; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 350;
+    font-size: 70px;
+    color: black;
+}
+.LstBlgPst{
+    height: 400px;
+    width: 700px;
+    display: inline-flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    background-image: url(../Image/bgimage.jpeg);
+    border: 1px double white;
+    margin-top: 75px; 
+    margin-left: 75px; 
+    border-radius: 75px 75px 75px 0px;
+}
+#blog{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 20px;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+}
+#blog h2{
+    color: black;
+    font-size: 25px;
+}
+#blog p{
+    font-family: cursive;
+    font-size: 15px;
+    word-spacing: 5px;
+    padding: 5%;
+    color: black;
+}
+/* footer page */
+img{
+    width: 20px;
+    height: 20px;
+}
+.Footer{
+    margin-top: 15%; 
+}
+.footbar p{
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 1.5% 1.5%;
+    background-image: url(../Image/bgimage3.png);
+}
+.footbar{
+    display: block;
+    background-image: url(../Image/uwp1836344.jpeg);
+}
+.Contacts{
+    display: flex;
+    position: relative;
+    margin-left: 28%;
+}
+.Contacts a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    word-spacing: 2%;
+}
+.linksocials{
+    margin-left: 37%;
+}
+.linksocials img{
+    margin-left: 7%;
+    width: 30px;
+    height: 30px;
+}
+#Date{
+    text-align: center;
+    font-weight: 500;
+}
+  
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 1000px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<body>
+   <div class="Maindiv">
+        <!--First Page-->
+        <header class="header1">
+            <div class="navbar">
+                <a href="../index.html"> <img src="../icon/arrow left.png" alt=""></a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#Homepage">Home</a></li>
+                        <li><a href="#prjt">Projects</a></li>
+                        <li><a href="#Blogs">Blog</a></li>
+                        <li><a href="../html webpages/Calcu.html">Calculator</a></li>
+                        <li><a href="../html webpages/Forms.html">Feedbacks</a></li>  
+                        <a href="#" id="Darkmode" class="mode"><img src="../icon/Dark Mode.png" alt="">On</a>
+                        <a href="#" id="Lightmode" class="mode"><img src="../icon/Light Mode.png" alt="">Off</a>     
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="Homepage" id="Homepage">
+            <div class="rolands">
+                <a href="#"><img src="../Image/GoloyaDP.jpg" alt="" class="img"></a>
+                <h3 class="hh">Hi I'm Rolando A. Goloya Jr</h3>
+                <p class="par">An Information Technology student at
+                    Tarlac Agricultural University, dedicated in creating and developing a
+                    world class Web Design and Web Development Project. To give the user
+                    a friendly and interactive web pages. <span><strong><a href="../html webpages/Rolando.html" id="visit" class="visit">Visit me..</a></strong></span>
+                </p>
+            </div>
+            <div class="rich">
+                <a href="#"><img src="../Image/LejesteDP.jpg" alt="" class="img"></a>
+                <h3 class="hh">Hello I'm Rich Lejesta</h3>
+                <p class="par">An Information Technology student at Tarlac Agricultural Unversity your associates especialist to
+                    utilize your business website along with my interpersonal and
+                    self-starer skills.<span><strong><a href="../html webpages/Rich.html" id="visit" class="visit">Visit me..</a></strong></span>
+                </p>
+            </div>
+        </div>
+        <!--Second page Recent Projecs-->
+        <div class="prjt" id="prjt">
+            <div class="Nametag">
+                <h1 class="Recenth1">Recent Projects</h1>
+                <div class="Listprjt">
+                    <table class="tbl">
+                        <tr>
+                            <td>Text to Speech<img src="../Image/Text to Speech.png" alt=""></td>
+                            <td>Voice Recognition<img src="../Image/Voice Recognition.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>CRUS-xml<img src="../Image/CRUD .png" alt=""></td>
+                            <td>BMI(OOP)<img src="../Image/BMI.png" alt=""></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>        
+        </div>
+        <!--Third Page-->
+        <div class="Container" id="Blogs">
+            <div class="BlgPost">
+                <h1 class="blgh1">Blog Post</h1>
+                <div class="LstBlgPst">
+                    <div id="blog">
+                        <h2>The Evolution of the Web</h3>
+                        <p>The web has evolved a lot over the years, and the applications of it today are almost 
+                            unrecognizable from before. But to have an understand of Web 3.0, we have to review its 
+                            previous iterations: Web 1.0 and Web 2.0.
+                        <br><strong><a href="../html webpages/Blog1.html" class="readme">Read Blog.</a></strong>
+                        </p>
+                    </div>
+                    <div id="blog">
+                        <h2>How to Practice Coding and Get Better at It</h2>
+                        <p>As a complete beginner, coding can be intimidating and quite hard to learn. In this article, I am going to list the steps I took to practice it and how I eventually got better at it.
+                        <strong><a href="../html webpages/Blog2.html" class="readme">Read Blog.</a></strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer Page-->
+        <footer>
+            <div class="Footer">
+                <div class="footbar" id="foot">
+                    <p>Contact Us:</p>
+                    <div class="linksocials">
+                        <a href="https://www.facebook.com/profile.php?id=100009890326790"><img src="../icon/facebook.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/glys_jr/"><img src="../icon/instagram.png" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/in/rolando-goloya-b39368223/"><img src="../icon/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <div class="Contacts">
+                        <ul>
+                            <a href="https://www.google.com/maps/place/Mangatarem,+Pangasinan/@15.7399947,120.2456379,12.11z/data=!4m5!3m4!1s0x339153d33b8735ad:0x3fe86b39efb69650!8m2!3d15.7554816!4d120.2974199"><img src="../icon/pin.png" alt="">Mangatarem, Pangasinan</a>
+                            <a href="https://mail.google.com/mail/u/0/#inbox"><img src="../icon/emaiBoxl.png" alt="">rgoloya@tau.edu.ph</a>
+                            <a href="#foot"><img src="../icon/telephone-call.png" alt="">09510598340</a>
+                        </ul>
+                    </div> 
+                    <div id="Date"></div>
+                </div>
+            </div>
+        </footer>
+</div>
+<script>
+
+    //code for dark mode
+    const btn = document.getElementById('Darkmode');
+
+    btn.addEventListener('click', function onClick(event) {
+    // 👇️ change background color
+    document.body.style.backgroundColor = 'Black';
+
+    // 👇️ optionally change text color
+    document.body.style.color = 'white';
+    });
+
+    //code for light mode
+    const btns = document.getElementById('Lightmode');
+
+    btns.addEventListener('click', function onClick(event) {
+    // 👇️ change background color
+    document.body.style.backgroundColor = 'White';
+
+    // 👇️ optionally change text color
+    document.body.style.color = 'Black';
+    });
+
+    //getting curent date for footer area
+    date = new Date();
+    year = date.getFullYear();
+    month = date.getMonth() + 1;
+    day = date.getDate();
+
+    document.getElementById("Date").innerHTML = "Date: " + Date();
+</script>
+</body>
+</html>

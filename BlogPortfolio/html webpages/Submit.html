@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form submitted</title>
+</head>
+<style>
+    body{
+        padding: 0%;
+        margin: 0%;
+        background-image: url(../Image/bgimage3.png);
+        color: black;
+    }
+   .body{
+        margin-left: 31.5%;
+        margin-right: 31.5%;
+        margin-top: 15%;
+        display: inline-block;
+        width: 500px;
+        height: auto;   
+   }
+   .btnContinue{
+       color: white;
+       background-color: black;
+       size: 50px;
+       padding: 3%;
+       font-size: medium;
+       border-radius: 50px 50px 50px 0px;
+        margin-left: 35%;
+   }
+   .btnContinue:hover{
+       background-color: darkblue;
+       border-color: black;
+       color: black;
+   }
+   p{
+       font-size: 30px;
+   }
+   .click-me-btn{
+       color: white;
+       width: 100px;
+       height: 50px;
+       background-color: darkblue;
+       border: 2px solid black;
+       border-radius: 20px 20px 20px 20px;
+       font-weight: 100;
+       margin-left: 35%;
+       margin-bottom: 5%;
+   }
+</style>
+<body>
+    <div class="body">
+        <p id="h1">Thank for filling out the form this will help us improve the webpages</p>
+        <button class="click-me-btn" type="button" onclick="changeme()">Click me..</button>       
+        <br>
+        <a href="../html webpages/Introductory.html"><input class="btnContinue" type="button" value="Homepage"></a>  
+    </div>
+</body>
+<script>
+    function changeme(){
+        document.getElementById("h1").innerHTML =  "You may now leave the site or press the button to return homepage";
+    }
+</script>
+</html>

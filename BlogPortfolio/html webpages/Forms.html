@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+</head>
+<style>
+    body{
+        background-image: url(../Image/bgimage2.jpeg);
+        width: cover;
+    }
+    .Container{
+        width: cover;
+        text-align: center;
+        margin-top: 50px;
+        padding: 50px 50px;
+    }
+    .btn{
+        width: 120px;
+        height: 50px;
+        margin: 15px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+</style>
+<body>
+   <div class="Container">
+       <h1>Feedback Forms</h1>
+        <form action="../html webpages/Submit.html" method="get">
+            <!-- For user info -->
+            <p>Name: <input type="text" name="name" required></p>
+            <p>Email: <input type="text" name="email" required></p>
+
+            <!-- For textarea -->
+            <br><p>To help us better serve you, please write your comments.</p>
+            <p><textarea name="Feedbacks" rows="10" cols="55" required></textarea><br></p>
+        
+            <!-- For button submit and reset -->
+            <input class="btn" type="reset">
+            <a href="../html webpages/Submit.html"><input class="btn" type="submit"></a>            
+        </form>
+    </div> 
+</body>
+<script>
+   
+</script>
+</html>
